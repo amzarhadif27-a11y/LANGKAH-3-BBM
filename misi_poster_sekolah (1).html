@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misi Poster Sekolah — Bahasa Melayu Tahun 4</title>
+    <!-- Muat turun Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fon mesra kanak-kanak dan mudah dibaca (Fredoka & Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Fredoka', 'sans-serif'],
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        royal: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#172554',
+                        },
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(180deg, #e0f2fe 0%, #eff6ff 45%, #dbeafe 100%);
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Fredoka', sans-serif;
+        }
+        /* Bayang lembut dan gaya butang mesra murid */
+        .btn-3d {
+            transition: all 0.15s ease;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18);
+            cursor: pointer;
+        }
+        .btn-3d:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+        }
+        /* Animasi kecil untuk gelombang air */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+        /* Sandaran susun atur & kawalan untuk persekitaran iframe Google Sites */
+        .hidden { display: none !important; }
+        input, textarea, button { font-family: inherit; }
+        canvas { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-amber-300 selection:text-blue-950">
+
+    <!-- HEADER APLIKASI DENGAN ILUSTRASI TAMAN SEKOLAH, TASIK & JAMBATAN KAYU -->
+    <header class="relative overflow-hidden bg-gradient-to-b from-blue-900 via-blue-800 to-sky-700 text-white shadow-xl border-b-4 border-amber-400">
+        <!-- Ilustrasi SVG Latar Header (Taman Sekolah, Tasik & Jambatan Kayu) -->
+        <div class="absolute inset-0 pointer-events-none opacity-95">
+            <svg viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" class="w-full h-full">
+                <defs>
+                    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#172554" />
+                        <stop offset="55%" stop-color="#1e40af" />
+                        <stop offset="100%" stop-color="#38bdf8" />
+                    </linearGradient>
+                    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#0284c7" />
+                        <stop offset="50%" stop-color="#38bdf8" />
+                        <stop offset="100%" stop-color="#0369a1" />
+                    </linearGradient>
+                    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#22c55e" />
+                        <stop offset="100%" stop-color="#15803d" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Langit & Matahari Emas -->
+                <rect width="1440" height="260" fill="url(#skyGrad)" />
+                <circle cx="1220" cy="68" r="38" fill="#fde047" opacity="0.9" />
+                <circle cx="1220" cy="68" r="52" fill="#facc15" opacity="0.25" />
+
+                <!-- Awan -->
+                <g fill="#ffffff" opacity="0.22">
+                    <circle cx="200" cy="55" r="24" />
+                    <circle cx="225" cy="50" r="30" />
+                    <circle cx="255" cy="58" r="22" />
+                    <circle cx="960" cy="45" r="20" />
+                    <circle cx="985" cy="42" r="26" />
+                    <circle cx="1010" cy="48" r="18" />
+                </g>
+
+                <!-- Bukit Hijau Taman Sekolah -->
+                <path d="M0,185 Q320,120 680,175 T1440,150 L1440,260 L0,260 Z" fill="#16a34a" />
+                <path d="M0,195 Q450,155 900,190 T1440,175 L1440,260 L0,260 Z" fill="url(#hillGrad)" />
+
+                <!-- Siluet Bangunan Sekolah di Kiri -->
+                <g transform="translate(85, 112)">
+                    <rect x="0" y="24" width="130" height="46" rx="4" fill="#fef3c7" opacity="0.9" />
+                    <polygon points="-8,24 65,0 138,24" fill="#dc2626" />
+                    <rect x="52" y="38" width="26" height="32" fill="#92400e" />
+                    <rect x="16" y="34" width="22" height="18" rx="2" fill="#38bdf8" />
+                    <rect x="92" y="34" width="22" height="18" rx="2" fill="#38bdf8" />
+                    <!-- Tiang Bendera -->
+                    <rect x="150" y="6" width="3" height="64" fill="#e2e8f0" />
+                    <polygon points="153,8 182,15 153,22" fill="#facc15" />
+                </g>
+
+                <!-- Pokok-pokok Taman -->
+                <g transform="translate(310, 118)">
+                    <rect x="16" y="34" width="8" height="28" fill="#78350f" />
+                    <circle cx="20" cy="24" r="22" fill="#15803d" />
+                    <circle cx="10" cy="28" r="15" fill="#22c55e" />
+                    <circle cx="30" cy="28" r="15" fill="#4ade80" />
+                </g>
+                <g transform="translate(1060, 110)">
+                    <rect x="18" y="38" width="9" height="32" fill="#78350f" />
+                    <circle cx="22" cy="26" r="25" fill="#15803d" />
+                    <circle cx="10" cy="30" r="17" fill="#22c55e" />
+                    <circle cx="34" cy="30" r="17" fill="#4ade80" />
+                </g>
+
+                <!-- Tasik Taman Sekolah -->
+                <ellipse cx="760" cy="222" rx="420" ry="38" fill="url(#lakeGrad)" />
+                <ellipse cx="760" cy="224" rx="390" ry="28" fill="#7dd3fc" opacity="0.35" />
+                <!-- Riak Air Tasik -->
+                <path d="M520,220 Q550,215 580,220 M880,228 Q915,223 950,228 M640,235 Q675,230 710,235" stroke="#e0f2fe" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7" />
+
+                <!-- Jambatan Kayu Melengkung Merentasi Tasik -->
+                <g transform="translate(655, 168)">
+                    <!-- Tiang Sokongan Jambatan -->
+                    <rect x="24" y="34" width="7" height="34" fill="#78350f" />
+                    <rect x="98" y="26" width="7" height="42" fill="#78350f" />
+                    <rect x="172" y="34" width="7" height="34" fill="#78350f" />
+                    <!-- Susur Tangan Kayu Atas -->
+                    <path d="M8,26 Q102,-2 196,26" stroke="#b45309" stroke-width="6" stroke-linecap="round" fill="none" />
+                    <path d="M12,38 Q102,10 192,38" stroke="#d97706" stroke-width="4" stroke-linecap="round" fill="none" />
+                    <!-- Dek Lantai Jambatan Kayu -->
+                    <path d="M0,48 Q102,18 204,48 L198,58 Q102,28 6,58 Z" fill="#92400e" />
+                    <path d="M3,48 Q102,18 201,48" stroke="#fbbf24" stroke-width="2" fill="none" />
+                </g>
+            </svg>
+        </div>
+
+        <!-- Kandungan Header -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-blue-950/65 backdrop-blur-md border-2 border-amber-400/70 rounded-3xl p-4 sm:p-6 shadow-2xl">
+                <div class="flex items-start sm:items-center gap-4">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-amber-300 to-amber-500 text-blue-950 flex items-center justify-center shadow-lg shrink-0 border-2 border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9" />
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400 text-blue-950 text-xs sm:text-sm font-extrabold uppercase tracking-wide mb-1.5 shadow-sm">
+                            <span>⭐ Bahasa Melayu Tahun 4</span>
+                            <span>•</span>
+                            <span>Langkah 3 — Misi Bina Ayat</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight drop-shadow">
+                            Misi Poster Sekolah
+                        </h1>
+                        <p class="text-sky-100 text-sm sm:text-base mt-1 font-medium">
+                            Hasilkan poster kebersihan sekolah menggunakan <span class="text-amber-300 font-bold">2 ayat tunggal</span> dan <span class="text-amber-300 font-bold">2 ayat majmuk</span> yang telah kamu bina dan semak!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2 self-start md:self-center bg-blue-900/90 border border-amber-300/60 px-4 py-2.5 rounded-2xl text-xs sm:text-sm text-amber-200 font-semibold shrink-0">
+                    <span class="text-lg">🏅</span>
+                    <span>Sedia Cetak & Muat Turun PNG</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- KANDUNGAN UTAMA: KIRI (INPUT) & KANAN (PRATONTON POSTER) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+
+            <!-- PANEL KIRI: RUANG INPUT (ISI BORANG / TAMPAL PROMPT) -->
+            <section class="lg:col-span-6 bg-white rounded-3xl shadow-xl border-2 border-blue-200 overflow-hidden">
+                <!-- Bar Tab Pilihan Mod -->
+                <div class="bg-gradient-to-r from-blue-900 to-blue-800 p-3 sm:p-4 border-b-4 border-amber-400">
+                    <div class="grid grid-cols-2 gap-2 bg-blue-950/70 p-1.5 rounded-2xl">
+                        <button type="button" id="tabFormBtn" onclick="switchMode('form')"
+                            class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all bg-amber-400 text-blue-950 shadow-md">
+                            <span>📝</span>
+                            <span>Isi Borang</span>
+                        </button>
+                        <button type="button" id="tabPromptBtn" onclick="switchMode('prompt')"
+                            class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all text-sky-100 hover:bg-blue-800/70">
+                            <span>📋</span>
+                            <span>Tampal Prompt</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KOTAK MESEJ MAKLUM BALAS / AMARAN (TIADA ALERT()) -->
+                <div id="feedbackBox" class="hidden mx-4 sm:mx-6 mt-5 p-4 rounded-2xl border-2 text-sm sm:text-base font-semibold transition-all" role="alert">
+                    <div class="flex items-start gap-3">
+                        <span id="feedbackIcon" class="text-xl shrink-0">⚠️</span>
+                        <div class="flex-1">
+                            <p id="feedbackTitle" class="font-bold"></p>
+                            <p id="feedbackMessage" class="mt-0.5 text-sm font-medium"></p>
+                        </div>
+                        <button type="button" onclick="hideFeedback()" class="text-current opacity-70 hover:opacity-100 font-bold px-2 py-0.5 rounded-lg">✕</button>
+                    </div>
+                </div>
+
+                <!-- MOD 1: ISI BORANG -->
+                <div id="formModePanel" class="p-5 sm:p-6 space-y-5">
+                    <!-- Butang Pantas Isi Contoh & Salin Prompt -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 bg-blue-50 border border-blue-200 p-3 rounded-2xl">
+                        <span class="text-xs sm:text-sm font-bold text-blue-900">💡 Perlukan bantuan mula?</span>
+                        <div class="flex flex-wrap gap-2">
+                            <button type="button" onclick="fillExampleData()"
+                                class="btn-3d inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-blue-950 font-bold text-xs sm:text-sm border border-amber-500">
+                                <span>✨</span>
+                                <span>Isi Contoh</span>
+                            </button>
+                            <button type="button" id="copyPromptBtn" onclick="copyPromptFromForm()"
+                                class="btn-3d inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold text-xs sm:text-sm border border-blue-300">
+                                <span>📋</span>
+                                <span id="copyBtnText">Salin Prompt</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Input Tajuk Poster -->
+                    <div>
+                        <label for="inputTitle" class="block text-sm sm:text-base font-extrabold text-blue-950 mb-1.5">
+                            1. Tajuk Poster <span class="text-red-600">*</span>
+                        </label>
+                        <input type="text" id="inputTitle" placeholder="Contoh: Sekolah Kita Bersih"
+                            class="w-full px-4 py-3 rounded-2xl border-2 border-blue-200 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none text-base font-semibold text-slate-800 transition">
+                    </div>
+
+                    <!-- Bahagian Ayat Tunggal -->
+                    <div class="bg-sky-50/80 border-2 border-sky-200 rounded-2xl p-4 space-y-3.5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-display font-bold text-base sm:text-lg text-blue-900 flex items-center gap-2">
+                                <span class="w-7 h-7 rounded-full bg-blue-700 text-white text-xs flex items-center justify-center font-bold">A</span>
+                                <span>Ayat Tunggal (1 subjek + 1 predikat)</span>
+                            </h3>
+                        </div>
+
+                        <div>
+                            <label for="inputSimple1" class="block text-sm font-bold text-slate-700 mb-1">
+                                Ayat Tunggal 1 <span class="text-red-600">*</span>
+                            </label>
+                            <input type="text" id="inputSimple1" placeholder="Contoh: Amir menyapu kelas."
+                                class="w-full px-4 py-2.5 rounded-xl border-2 border-sky-200 bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none text-sm sm:text-base font-medium">
+                        </div>
+
+                        <div>
+                            <label for="inputSimple2" class="block text-sm font-bold text-slate-700 mb-1">
+                                Ayat Tunggal 2 <span class="text-red-600">*</span>
+                            </label>
+                            <input type="text" id="inputSimple2" placeholder="Contoh: Siti mengelap meja."
+                                class="w-full px-4 py-2.5 rounded-xl border-2 border-sky-200 bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none text-sm sm:text-base font-medium">
+                        </div>
+                    </div>
+
+                    <!-- Bahagian Ayat Majmuk -->
+                    <div class="bg-amber-50/70 border-2 border-amber-200 rounded-2xl p-4 space-y-3.5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-display font-bold text-base sm:text-lg text-amber-900 flex items-center gap-2">
+                                <span class="w-7 h-7 rounded-full bg-amber-500 text-blue-950 text-xs flex items-center justify-center font-bold">B</span>
+                                <span>Ayat Majmuk (menggunakan kata hubung)</span>
+                            </h3>
+                        </div>
+
+                        <div>
+                            <label for="inputCompound1" class="block text-sm font-bold text-slate-700 mb-1">
+                                Ayat Majmuk 1 <span class="text-red-600">*</span>
+                            </label>
+                            <textarea id="inputCompound1" rows="2" placeholder="Contoh: Ravi mengutip sampah dan Aina menyusun kerusi."
+                                class="w-full px-4 py-2.5 rounded-xl border-2 border-amber-200 bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none text-sm sm:text-base font-medium resize-y"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="inputCompound2" class="block text-sm font-bold text-slate-700 mb-1">
+                                Ayat Majmuk 2 <span class="text-red-600">*</span>
+                            </label>
+                            <textarea id="inputCompound2" rows="2" placeholder="Contoh: Farah menyiram pokok manakala Hakim mengutip daun kering."
+                                class="w-full px-4 py-2.5 rounded-xl border-2 border-amber-200 bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none text-sm sm:text-base font-medium resize-y"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Pilihan Tema Warna Poster -->
+                    <div>
+                        <label class="block text-sm sm:text-base font-extrabold text-blue-950 mb-2">
+                            2. Pilih Tema Warna Poster
+                        </label>
+                        <div class="grid grid-cols-3 gap-3" id="themeSelector">
+                            <button type="button" data-theme="Biru" onclick="selectTheme('Biru')"
+                                class="theme-option flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-blue-600 bg-blue-50 text-blue-950 font-bold shadow-sm transition">
+                                <span class="w-7 h-7 rounded-full bg-gradient-to-br from-blue-700 to-sky-400 border-2 border-amber-400 mb-1.5 shadow"></span>
+                                <span class="text-sm">Biru</span>
+                            </button>
+                            <button type="button" data-theme="Hijau" onclick="selectTheme('Hijau')"
+                                class="theme-option flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-slate-200 bg-white hover:bg-emerald-50 text-slate-700 font-bold transition">
+                                <span class="w-7 h-7 rounded-full bg-gradient-to-br from-emerald-700 to-lime-400 border-2 border-amber-400 mb-1.5 shadow"></span>
+                                <span class="text-sm">Hijau</span>
+                            </button>
+                            <button type="button" data-theme="Ungu" onclick="selectTheme('Ungu')"
+                                class="theme-option flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-slate-200 bg-white hover:bg-purple-50 text-slate-700 font-bold transition">
+                                <span class="w-7 h-7 rounded-full bg-gradient-to-br from-purple-700 to-fuchsia-400 border-2 border-amber-400 mb-1.5 shadow"></span>
+                                <span class="text-sm">Ungu</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Butang Utama Jana Poster -->
+                    <div class="pt-1">
+                        <button type="button" onclick="generateFromForm()"
+                            class="btn-3d w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 hover:from-blue-700 hover:to-blue-600 text-white font-display font-bold text-lg tracking-wide border-2 border-amber-400 flex items-center justify-center gap-2.5 shadow-lg">
+                            <span>🎨</span>
+                            <span>Jana Poster</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MOD 2: TAMPAL PROMPT -->
+                <div id="promptModePanel" class="hidden p-5 sm:p-6 space-y-5">
+                    <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-4 text-sm text-blue-950">
+                        <p class="font-bold flex items-center gap-2 mb-1">
+                            <span>📌</span>
+                            <span>Panduan Format Prompt:</span>
+                        </p>
+                        <p class="text-slate-700 leading-relaxed">
+                            Tampal atau sunting teks mengikut baris <strong>Tajuk</strong>, <strong>Ayat tunggal 1</strong>, <strong>Ayat tunggal 2</strong>, <strong>Ayat majmuk 1</strong>, <strong>Ayat majmuk 2</strong>, dan <strong>Tema</strong> (Biru / Hijau / Ungu).
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <label for="promptTextarea" class="font-extrabold text-blue-950 text-sm sm:text-base">
+                                Kotak Teks Prompt Murid
+                            </label>
+                            <button type="button" onclick="fillExampleData()"
+                                class="btn-3d inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-blue-950 font-bold text-xs sm:text-sm border border-amber-500">
+                                <span>✨</span>
+                                <span>Isi Contoh</span>
+                            </button>
+                        </div>
+                        <textarea id="promptTextarea" rows="10"
+                            placeholder="Tajuk: Sekolah Kita Bersih&#10;Ayat tunggal 1: Amir menyapu kelas.&#10;Ayat tunggal 2: Siti mengelap meja.&#10;Ayat majmuk 1: Ravi mengutip sampah dan Aina menyusun kerusi.&#10;Ayat majmuk 2: Farah menyiram pokok manakala Hakim mengutip daun kering.&#10;Tema: Biru"
+                            class="w-full p-4 rounded-2xl border-2 border-blue-200 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none font-mono text-sm leading-relaxed text-slate-800 bg-slate-50"></textarea>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <button type="button" onclick="generateFromPrompt()"
+                            class="btn-3d flex-1 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 hover:from-blue-700 hover:to-blue-600 text-white font-display font-bold text-lg tracking-wide border-2 border-amber-400 flex items-center justify-center gap-2 shadow-lg">
+                            <span>🚀</span>
+                            <span>Jana daripada Prompt</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PANEL KANAN: PRATONTON POSTER & MUAT TURUN PNG -->
+            <section class="lg:col-span-6 flex flex-col items-center">
+                <div class="w-full bg-white rounded-3xl shadow-xl border-2 border-blue-200 overflow-hidden">
+                    <!-- Bar Atas Pratonton -->
+                    <div class="bg-gradient-to-r from-blue-900 to-blue-800 px-5 py-4 border-b-4 border-amber-400 flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex items-center gap-2.5 text-white">
+                            <span class="text-xl">🖼️</span>
+                            <div>
+                                <h2 class="font-display font-bold text-lg leading-tight">Pratonton Poster Sebenar</h2>
+                                <p class="text-xs text-sky-200">Nisbah A4 Bercetak (900 × 1200 px)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button" onclick="openFullscreenPreview()"
+                                class="btn-3d inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-2xl bg-blue-950/80 hover:bg-blue-950 text-amber-300 font-display font-bold text-xs sm:text-sm border border-amber-400/70 shadow-md"
+                                title="Lihat Poster Skrin Penuh">
+                                <span>🔍</span>
+                                <span class="hidden sm:inline">Besarkan</span>
+                            </button>
+
+                            <button type="button" onclick="downloadPosterPNG()"
+                                class="btn-3d inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-blue-950 font-display font-bold text-sm sm:text-base border-2 border-white shadow-md">
+                                <span>⬇️</span>
+                                <span>Muat Turun PNG</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bekas Canvas Responsif Bergaya Poster Gantung Bercetak -->
+                    <div class="p-4 sm:p-7 bg-gradient-to-b from-slate-200 via-slate-100 to-slate-200 flex flex-col items-center justify-center relative">
+                        <!-- Hiasan Tali & Paku Gantung Poster -->
+                        <div class="flex flex-col items-center -mb-1.5 z-10 pointer-events-none">
+                            <div class="w-4 h-4 rounded-full bg-gradient-to-br from-amber-300 to-amber-600 border-2 border-blue-950 shadow"></div>
+                            <svg width="140" height="24" viewBox="0 0 140 24" class="overflow-visible">
+                                <path d="M70,0 L12,24 M70,0 L128,24" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- Bingkai Kayu / Kertas Poster Sebenar -->
+                        <div class="w-full max-w-[540px] p-2 sm:p-2.5 rounded-xl bg-gradient-to-br from-amber-200 via-amber-400 to-amber-600 shadow-[0_20px_45px_rgba(15,23,42,0.28)] border border-amber-700/40">
+                            <div class="rounded-lg overflow-hidden bg-white shadow-inner">
+                                <!-- Canvas Resolusi Tinggi Sebenar (900 x 1200) dipaparkan secara responsif -->
+                                <canvas id="posterCanvas" width="900" height="1200" class="w-full h-auto block cursor-pointer" onclick="openFullscreenPreview()" title="Klik untuk melihat pratonton besar"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap items-center justify-center gap-2.5 text-xs sm:text-sm text-slate-700 font-semibold">
+                            <span class="inline-flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-300 shadow-sm">
+                                🖨️ Kualiti Cetak HD (900 × 1200 px)
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-300 shadow-sm">
+                                ✍️ Ejaan & Tanda Baca Dikekalkan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- MODAL PRATONTON POSTER SKRIN PENUH -->
+    <div id="fullscreenModal" class="hidden fixed inset-0 z-50 bg-blue-950/90 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6" onclick="closeFullscreenPreview(event)">
+        <div class="relative max-w-2xl w-full max-h-[95vh] flex flex-col items-center">
+            <div class="w-full flex items-center justify-between text-white mb-2 px-1">
+                <span class="font-display font-bold text-base sm:text-lg text-amber-300">🖼️ Pratonton Penuh Poster Sebenar</span>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="downloadPosterPNG()"
+                        class="px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-blue-950 font-bold text-xs sm:text-sm shadow">
+                        ⬇️ Muat Turun PNG
+                    </button>
+                    <button type="button" onclick="closeFullscreenPreview()"
+                        class="px-3 py-1.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm">
+                        ✕ Tutup
+                    </button>
+                </div>
+            </div>
+            <div class="overflow-auto max-h-[85vh] rounded-xl border-4 border-amber-400 shadow-2xl bg-white">
+                <img id="fullscreenPosterImg" alt="Pratonton Poster Sekolah" class="w-full h-auto block" />
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER RINGKAS -->
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-blue-900/80 font-semibold">
+        <p>Misi Poster Sekolah • Aktiviti Pembelajaran Bahasa Melayu Tahun 4 (Ayat Tunggal & Ayat Majmuk)</p>
+    </footer>
+
+    <script>
+        // =========================================================================
+        // 1. DATA CONTOH, STATE APLIKASI & PALET TEMA WARNA POSTER
+        // =========================================================================
+        const EXAMPLE_DATA = {
+            title: "Sekolah Kita Bersih",
+            simple1: "Amir menyapu kelas.",
+            simple2: "Siti mengelap meja.",
+            compound1: "Ravi mengutip sampah dan Aina menyusun kerusi.",
+            compound2: "Farah menyiram pokok manakala Hakim mengutip daun kering.",
+            theme: "Biru"
+        };
+
+        let currentPosterState = { ...EXAMPLE_DATA };
+        let selectedTheme = "Biru";
+
+        const THEME_PALETTES = {
+            Biru: {
+                outerBorder: "#1e3a8a",
+                innerBorder: "#facc15",
+                goldAccent: "#eab308",
+                bgGradientTop: "#eff6ff",
+                bgGradientBottom: "#dbeafe",
+                headerBg: "#1d4ed8",
+                headerRibbon: "#172554",
+                titleBadgeBg: "#facc15",
+                titleBadgeText: "#172554",
+                titleText: "#ffffff",
+                card1Header: "#1e40af",
+                card1Bg: "#ffffff",
+                card1Border: "#3b82f6",
+                card1Accent: "#eff6ff",
+                card2Header: "#0369a1",
+                card2Bg: "#ffffff",
+                card2Border: "#0ea5e9",
+                card2Accent: "#f0f9ff",
+                footerBg: "#172554",
+                footerText: "#fde047"
+            },
+            Hijau: {
+                outerBorder: "#14532d",
+                innerBorder: "#facc15",
+                goldAccent: "#eab308",
+                bgGradientTop: "#f0fdf4",
+                bgGradientBottom: "#dcfce7",
+                headerBg: "#15803d",
+                headerRibbon: "#052e16",
+                titleBadgeBg: "#facc15",
+                titleBadgeText: "#052e16",
+                titleText: "#ffffff",
+                card1Header: "#166534",
+                card1Bg: "#ffffff",
+                card1Border: "#22c55e",
+                card1Accent: "#f0fdf4",
+                card2Header: "#0f766e",
+                card2Bg: "#ffffff",
+                card2Border: "#14b8a6",
+                card2Accent: "#f0fdfa",
+                footerBg: "#052e16",
+                footerText: "#fde047"
+            },
+            Ungu: {
+                outerBorder: "#4c1d95",
+                innerBorder: "#facc15",
+                goldAccent: "#eab308",
+                bgGradientTop: "#faf5ff",
+                bgGradientBottom: "#f3e8ff",
+                headerBg: "#6d28d9",
+                headerRibbon: "#2e1065",
+                titleBadgeBg: "#facc15",
+                titleBadgeText: "#2e1065",
+                titleText: "#ffffff",
+                card1Header: "#5b21b6",
+                card1Bg: "#ffffff",
+                card1Border: "#8b5cf6",
+                card1Accent: "#f5f3ff",
+                card2Header: "#86198f",
+                card2Bg: "#ffffff",
+                card2Border: "#d946ef",
+                card2Accent: "#fdf4ff",
+                footerBg: "#2e1065",
+                footerText: "#fde047"
+            }
+        };
+
+        // =========================================================================
+        // 2. FUNGSI INTERAKSI ANTARA MUKA (TAB, TEMA, MESEJ, SALIN & CONTOH)
+        // =========================================================================
+        function switchMode(mode) {
+            hideFeedback();
+            const tabFormBtn = document.getElementById("tabFormBtn");
+            const tabPromptBtn = document.getElementById("tabPromptBtn");
+            const formPanel = document.getElementById("formModePanel");
+            const promptPanel = document.getElementById("promptModePanel");
+
+            if (mode === "form") {
+                formPanel.classList.remove("hidden");
+                promptPanel.classList.add("hidden");
+                tabFormBtn.className = "flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all bg-amber-400 text-blue-950 shadow-md";
+                tabPromptBtn.className = "flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all text-sky-100 hover:bg-blue-800/70";
+            } else {
+                promptPanel.classList.remove("hidden");
+                formPanel.classList.add("hidden");
+                tabPromptBtn.className = "flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all bg-amber-400 text-blue-950 shadow-md";
+                tabFormBtn.className = "flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all text-sky-100 hover:bg-blue-800/70";
+            }
+        }
+
+        function selectTheme(themeName) {
+            const validThemes = ["Biru", "Hijau", "Ungu"];
+            selectedTheme = validThemes.includes(themeName) ? themeName : "Biru";
+
+            const buttons = document.querySelectorAll(".theme-option");
+            buttons.forEach(btn => {
+                const t = btn.getAttribute("data-theme");
+                if (t === selectedTheme) {
+                    btn.className = "theme-option flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-blue-600 bg-blue-50 text-blue-950 font-bold shadow-sm transition ring-2 ring-amber-400";
+                } else {
+                    btn.className = "theme-option flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-bold transition";
+                }
+            });
+        }
+
+        function showFeedback(type, title, message) {
+            const box = document.getElementById("feedbackBox");
+            const icon = document.getElementById("feedbackIcon");
+            const titleEl = document.getElementById("feedbackTitle");
+            const msgEl = document.getElementById("feedbackMessage");
+
+            box.classList.remove("hidden", "bg-red-50", "border-red-300", "text-red-900", "bg-emerald-50", "border-emerald-300", "text-emerald-900");
+
+            if (type === "error") {
+                box.classList.add("bg-red-50", "border-red-300", "text-red-900");
+                icon.textContent = "⚠️";
+            } else {
+                box.classList.add("bg-emerald-50", "border-emerald-300", "text-emerald-900");
+                icon.textContent = "✅";
+            }
+
+            titleEl.textContent = title;
+            msgEl.textContent = message;
+        }
+
+        function hideFeedback() {
+            const box = document.getElementById("feedbackBox");
+            if (box) box.classList.add("hidden");
+        }
+
+        function formatPromptString(data) {
+            return [
+                `Tajuk: ${data.title}`,
+                `Ayat tunggal 1: ${data.simple1}`,
+                `Ayat tunggal 2: ${data.simple2}`,
+                `Ayat majmuk 1: ${data.compound1}`,
+                `Ayat majmuk 2: ${data.compound2}`,
+                `Tema: ${data.theme}`
+            ].join("\n");
+        }
+
+        function fillExampleData() {
+            document.getElementById("inputTitle").value = EXAMPLE_DATA.title;
+            document.getElementById("inputSimple1").value = EXAMPLE_DATA.simple1;
+            document.getElementById("inputSimple2").value = EXAMPLE_DATA.simple2;
+            document.getElementById("inputCompound1").value = EXAMPLE_DATA.compound1;
+            document.getElementById("inputCompound2").value = EXAMPLE_DATA.compound2;
+            selectTheme(EXAMPLE_DATA.theme);
+
+            document.getElementById("promptTextarea").value = formatPromptString(EXAMPLE_DATA);
+
+            currentPosterState = { ...EXAMPLE_DATA };
+            renderPoster(currentPosterState);
+            showFeedback("success", "Contoh Berjaya Diisi!", "Semua ruang contoh telah dilengkapkan dan poster dikemas kini.");
+        }
+
+        function copyPromptFromForm() {
+            const formData = {
+                title: document.getElementById("inputTitle").value.trim() || EXAMPLE_DATA.title,
+                simple1: document.getElementById("inputSimple1").value.trim() || EXAMPLE_DATA.simple1,
+                simple2: document.getElementById("inputSimple2").value.trim() || EXAMPLE_DATA.simple2,
+                compound1: document.getElementById("inputCompound1").value.trim() || EXAMPLE_DATA.compound1,
+                compound2: document.getElementById("inputCompound2").value.trim() || EXAMPLE_DATA.compound2,
+                theme: selectedTheme
+            };
+
+            const promptText = formatPromptString(formData);
+            const promptBox = document.getElementById("promptTextarea");
+            promptBox.value = promptText;
+
+            const onCopySuccess = () => {
+                const btnText = document.getElementById("copyBtnText");
+                btnText.textContent = "Disalin!";
+                setTimeout(() => { btnText.textContent = "Salin Prompt"; }, 2000);
+                showFeedback("success", "Prompt Disalin!", "Teks prompt telah disalin dan boleh ditampal di tab Tampal Prompt.");
+            };
+
+            const tempArea = document.createElement("textarea");
+            tempArea.value = promptText;
+            tempArea.style.position = "fixed";
+            tempArea.style.opacity = "0";
+            document.body.appendChild(tempArea);
+            tempArea.focus();
+            tempArea.select();
+
+            let copied = false;
+            try {
+                copied = document.execCommand("copy");
+            } catch (e) {
+                copied = false;
+            }
+            document.body.removeChild(tempArea);
+
+            if (copied) {
+                onCopySuccess();
+            } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(promptText).then(onCopySuccess).catch(() => {
+                    switchMode("prompt");
+                    promptBox.focus();
+                    promptBox.select();
+                    showFeedback("error", "Salin Secara Manual", "Google Sites mengehadkan salinan automatik. Teks telah dipilih di kotak Prompt — tekan Ctrl+C untuk menyalin.");
+                });
+            } else {
+                switchMode("prompt");
+                promptBox.focus();
+                promptBox.select();
+                showFeedback("error", "Salin Secara Manual", "Teks telah dipilih di kotak Prompt — tekan Ctrl+C untuk menyalin.");
+            }
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                closeFullscreenPreview();
+            }
+        });
+
+        function roundRectPath(ctx, x, y, width, height, radius) {
+            const w = Math.max(0, width);
+            const h = Math.max(0, height);
+            const r = Math.max(0, Math.min(radius, w / 2, h / 2));
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+        }
+
+        // Fungsi pembalut perkataan automatik supaya ayat panjang tidak terpotong
+        function wrapTextLines(ctx, text, maxWidth) {
+            const words = text.split(/\s+/);
+            const lines = [];
+            let currentLine = "";
+
+            for (let i = 0; i < words.length; i++) {
+                const word = words[i];
+                const testLine = currentLine ? currentLine + " " + word : word;
+                const metrics = ctx.measureText(testLine);
+
+                if (metrics.width > maxWidth && currentLine !== "") {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    if (ctx.measureText(word).width > maxWidth) {
+                        if (currentLine) {
+                            lines.push(currentLine);
+                            currentLine = "";
+                        }
+                        let chunk = "";
+                        for (const char of word) {
+                            if (ctx.measureText(chunk + char).width > maxWidth && chunk !== "") {
+                                lines.push(chunk);
+                                chunk = char;
+                            } else {
+                                chunk += char;
+                            }
+                        }
+                        currentLine = chunk;
+                    } else {
+                        currentLine = testLine;
+                    }
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine);
+            }
+            return lines;
+        }
+
+        function drawCornerOrnament(ctx, cx, cy, rotAngle, color) {
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate(rotAngle);
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(28, 0);
+            ctx.lineTo(20, 8);
+            ctx.lineTo(8, 8);
+            ctx.lineTo(8, 20);
+            ctx.lineTo(0, 28);
+            ctx.closePath();
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(15, 15, 3.5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function renderPoster(data) {
+            const canvas = document.getElementById("posterCanvas");
+            if (!canvas) return;
+            const ctx = canvas.getContext("2d");
+            if (!ctx) return;
+            const W = canvas.width;   // 900
+            const H = canvas.height;  // 1200
+            const palette = THEME_PALETTES[data.theme] || THEME_PALETTES.Biru;
+
+            ctx.clearRect(0, 0, W, H);
+
+            // 1. Tekstur Kertas Poster Berkualiti Tinggi & Latar Bergradien
+            const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+            bgGrad.addColorStop(0, "#ffffff");
+            bgGrad.addColorStop(0.35, palette.bgGradientTop);
+            bgGrad.addColorStop(1, palette.bgGradientBottom);
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, W, H);
+
+            // Sinaran cahaya lembut di belakang tajuk (sunburst poster kempen)
+            ctx.save();
+            ctx.translate(W / 2, 160);
+            ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+            for (let i = 0; i < 16; i++) {
+                ctx.rotate((Math.PI * 2) / 16);
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(-22, -460);
+                ctx.lineTo(22, -460);
+                ctx.closePath();
+                ctx.fill();
+            }
+            ctx.restore();
+
+            // Tekstur bintik halus kertas cetak
+            ctx.fillStyle = "rgba(15, 23, 42, 0.03)";
+            for (let gx = 24; gx < W; gx += 32) {
+                for (let gy = 24; gy < H; gy += 32) {
+                    ctx.fillRect(gx, gy, 2, 2);
+                }
+            }
+
+            // 2. Bingkai Rasmi Poster Bertingkat (Sempadan Luar + Garisan Emas + Hiasan Penjuru)
+            ctx.save();
+            roundRectPath(ctx, 16, 16, W - 32, H - 32, 22);
+            ctx.lineWidth = 12;
+            ctx.strokeStyle = palette.outerBorder;
+            ctx.stroke();
+
+            roundRectPath(ctx, 28, 28, W - 56, H - 56, 16);
+            ctx.lineWidth = 4;
+            ctx.strokeStyle = palette.innerBorder;
+            ctx.stroke();
+
+            roundRectPath(ctx, 36, 36, W - 72, H - 72, 12);
+            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = palette.outerBorder;
+            ctx.stroke();
+
+            // Hiasan bucu emas pada keempat-empat penjuru poster
+            drawCornerOrnament(ctx, 40, 40, 0, palette.goldAccent);
+            drawCornerOrnament(ctx, W - 40, 40, Math.PI / 2, palette.goldAccent);
+            drawCornerOrnament(ctx, W - 40, H - 40, Math.PI, palette.goldAccent);
+            drawCornerOrnament(ctx, 40, H - 40, -Math.PI / 2, palette.goldAccent);
+            ctx.restore();
+
+            // 3. Jalur Lencana Rasmi Kempen & Tajuk Besar Bergaya Poster
+            const headerX = 52;
+            const headerY = 50;
+            const headerW = W - 104;
+            const headerH = 196;
+
+            ctx.save();
+            // Bayang blok tajuk
+            ctx.fillStyle = "rgba(15, 23, 42, 0.16)";
+            roundRectPath(ctx, headerX + 4, headerY + 6, headerW, headerH, 20);
+            ctx.fill();
+
+            // Latar blok tajuk bergradien
+            const hdrGrad = ctx.createLinearGradient(headerX, headerY, headerX, headerY + headerH);
+            hdrGrad.addColorStop(0, palette.headerRibbon);
+            hdrGrad.addColorStop(1, palette.headerBg);
+            roundRectPath(ctx, headerX, headerY, headerW, headerH, 20);
+            ctx.fillStyle = hdrGrad;
+            ctx.fill();
+
+            ctx.lineWidth = 4;
+            ctx.strokeStyle = palette.innerBorder;
+            ctx.stroke();
+
+            // Reben Rasmi Atas: KEMPEN KEBERSIHAN SEKOLAH • BAHASA MELAYU TAHUN 4
+            const ribbonW = 630;
+            const ribbonH = 34;
+            const ribbonX = (W - ribbonW) / 2;
+            const ribbonY = headerY + 14;
+
+            roundRectPath(ctx, ribbonX, ribbonY, ribbonW, ribbonH, 17);
+            ctx.fillStyle = palette.titleBadgeBg;
+            ctx.fill();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#ffffff";
+            ctx.stroke();
+
+            ctx.fillStyle = palette.titleBadgeText;
+            ctx.font = "800 14.5px 'Nunito', sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("★ KEMPEN KEBERSIHAN SEKOLAH • BAHASA MELAYU TAHUN 4 ★", W / 2, ribbonY + ribbonH / 2 + 1);
+
+            // Teks Tajuk Besar Poster dengan kesan Outline & Drop Shadow
+            let titleFontSize = 56;
+            ctx.font = `700 ${titleFontSize}px 'Fredoka', sans-serif`;
+            let titleLines = wrapTextLines(ctx, data.title, headerW - 64);
+
+            if (titleLines.length > 2) {
+                titleFontSize = 42;
+                ctx.font = `700 ${titleFontSize}px 'Fredoka', sans-serif`;
+                titleLines = wrapTextLines(ctx, data.title, headerW - 64).slice(0, 2);
+            } else if (titleLines.length === 2) {
+                titleFontSize = 46;
+                ctx.font = `700 ${titleFontSize}px 'Fredoka', sans-serif`;
+                titleLines = wrapTextLines(ctx, data.title, headerW - 64).slice(0, 2);
+            }
+
+            const titleStartY = titleLines.length === 1 ? headerY + 112 : headerY + 92;
+            const titleLineHeight = titleFontSize + 8;
+
+            titleLines.forEach((line, idx) => {
+                const ty = titleStartY + idx * titleLineHeight;
+                // Bayang dalam (drop shadow)
+                ctx.fillStyle = "rgba(0, 0, 0, 0.42)";
+                ctx.fillText(line, W / 2 + 3, ty + 4);
+
+                // Garisan luar (stroke) gelap untuk kejelasan poster bercetak
+                ctx.lineWidth = 6;
+                ctx.strokeStyle = palette.headerRibbon;
+                ctx.lineJoin = "round";
+                ctx.strokeText(line, W / 2, ty);
+
+                // Isi huruf putih terang
+                ctx.fillStyle = palette.titleText;
+                ctx.fillText(line, W / 2, ty);
+            });
+
+            // Sub-lencana kecil bawah tajuk: MISI BINA AYAT
+            const subPillW = 220;
+            const subPillH = 24;
+            roundRectPath(ctx, (W - subPillW) / 2, headerY + headerH - 14, subPillW, subPillH, 12);
+            ctx.fillStyle = palette.goldAccent;
+            ctx.fill();
+            ctx.strokeStyle = palette.headerRibbon;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.fillStyle = palette.titleBadgeText;
+            ctx.font = "800 12.5px 'Nunito', sans-serif";
+            ctx.fillText("LANGKAH 3 • MISI BINA AYAT", W / 2, headerY + headerH - 2);
+            ctx.restore();
+
+            // 4. Ilustrasi Utama Taman Sekolah yang Kaya & Terperinci (360px tinggi)
+            const illusX = 52;
+            const illusY = 264;
+            const illusW = W - 104;
+            const illusH = 355;
+            drawSchoolCleanlinessScene(ctx, illusX, illusY, illusW, illusH, palette);
+
+            // 5. Susunan Infografik Dua Bahagian Ayat (AYAT TUNGGAL & AYAT MAJMUK)
+            let currentY = illusY + illusH + 22;
+            const cardX = 52;
+            const cardW = W - 104;
+
+            // Bahagian A: AYAT TUNGGAL
+            const card1Height = drawSentenceSection(ctx, {
+                x: cardX,
+                y: currentY,
+                w: cardW,
+                badgeLabel: "2 AYAT TUNGGAL",
+                sectionTitle: "AYAT TUNGGAL",
+                iconText: "✏️",
+                sentences: [data.simple1, data.simple2],
+                headerColor: palette.card1Header,
+                bgColor: palette.card1Bg,
+                borderColor: palette.card1Border,
+                accentBg: palette.card1Accent,
+                goldColor: palette.goldAccent
+            });
+
+            currentY += card1Height + 18;
+
+            // Bahagian B: AYAT MAJMUK
+            const card2Height = drawSentenceSection(ctx, {
+                x: cardX,
+                y: currentY,
+                w: cardW,
+                badgeLabel: "2 AYAT MAJMUK",
+                sectionTitle: "AYAT MAJMUK",
+                iconText: "🌟",
+                sentences: [data.compound1, data.compound2],
+                headerColor: palette.card2Header,
+                bgColor: palette.card2Bg,
+                borderColor: palette.card2Border,
+                accentBg: palette.card2Accent,
+                goldColor: palette.goldAccent
+            });
+
+            // 6. Jalur Penutup Bawah Poster Kempen Sebenar
+            const footerH = 54;
+            const footerY = H - 48 - footerH;
+            ctx.save();
+            roundRectPath(ctx, 52, footerY, W - 104, footerH, 14);
+            ctx.fillStyle = palette.footerBg;
+            ctx.fill();
+            ctx.lineWidth = 2.5;
+            ctx.strokeStyle = palette.goldAccent;
+            ctx.stroke();
+
+            ctx.fillStyle = palette.footerText;
+            ctx.font = "800 17px 'Nunito', sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("SEKOLAH BERSIH, MURID CERIA • BERSAMA MENJAGA ALAM SEKITAR", W / 2, footerY + 20);
+
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "600 13px 'Nunito', sans-serif";
+            ctx.fillText("Pameran Hasil Kerja Murid Tahun 4 • Aktiviti Misi Bina Ayat Bahasa Melayu", W / 2, footerY + 39);
+            ctx.restore();
+        }
+
+        // Lukis Kad Infografik Ayat Tunggal / Ayat Majmuk dengan pembalut baris automatik
+        function drawSentenceSection(ctx, opts) {
+            const { x, y, w, badgeLabel, sectionTitle, iconText, sentences, headerColor, bgColor, borderColor, accentBg, goldColor } = opts;
+
+            const paddingX = 24;
+            const textMaxWidth = w - paddingX * 2 - 54;
+            const fontSize = 23;
+            const lineHeight = 31;
+
+            ctx.font = `700 ${fontSize}px 'Nunito', sans-serif`;
+            const wrappedList = sentences.map(sentence => wrapTextLines(ctx, sentence, textMaxWidth));
+
+            const headerBarH = 48;
+            let contentHeight = 16;
+            wrappedList.forEach((lines, idx) => {
+                const blockH = Math.max(40, lines.length * lineHeight + 12);
+                contentHeight += blockH + (idx === 0 ? 12 : 0);
+            });
+            contentHeight += 14;
+
+            const totalHeight = headerBarH + contentHeight;
+
+            ctx.save();
+            // Bayang kad lembut
+            ctx.fillStyle = "rgba(15, 23, 42, 0.09)";
+            roundRectPath(ctx, x + 3, y + 5, w, totalHeight, 18);
+            ctx.fill();
+
+            // Badan kad putih bersih
+            roundRectPath(ctx, x, y, w, totalHeight, 18);
+            ctx.fillStyle = bgColor;
+            ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = borderColor;
+            ctx.stroke();
+
+            // Bar tajuk bahagian
+            ctx.beginPath();
+            ctx.moveTo(x + 18, y);
+            ctx.lineTo(x + w - 18, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + 18);
+            ctx.lineTo(x + w, y + headerBarH);
+            ctx.lineTo(x, y + headerBarH);
+            ctx.lineTo(x, y + 18);
+            ctx.quadraticCurveTo(x, y, x + 18, y);
+            ctx.closePath();
+            ctx.fillStyle = headerColor;
+            ctx.fill();
+
+            // Garis aksen emas bawah tajuk bahagian
+            ctx.fillStyle = goldColor;
+            ctx.fillRect(x, y + headerBarH - 3.5, w, 3.5);
+
+            // Teks tajuk bahagian + ikon
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "700 23px 'Fredoka', sans-serif";
+            ctx.textAlign = "left";
+            ctx.textBaseline = "middle";
+            ctx.fillText(`${iconText}  ${sectionTitle}`, x + 22, y + headerBarH / 2);
+
+            // Lencana kecil di kanan bar tajuk
+            const pillW = 152;
+            const pillH = 26;
+            roundRectPath(ctx, x + w - pillW - 18, y + (headerBarH - pillH) / 2, pillW, pillH, 13);
+            ctx.fillStyle = "#facc15";
+            ctx.fill();
+
+            ctx.fillStyle = "#1e293b";
+            ctx.font = "800 13px 'Nunito', sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText(badgeLabel, x + w - pillW / 2 - 18, y + headerBarH / 2 + 1);
+
+            // Lukis setiap ayat dengan nombor bulatan & pembalut baris kemas
+            let cursorY = y + headerBarH + 16;
+
+            wrappedList.forEach((lines, idx) => {
+                const blockH = Math.max(40, lines.length * lineHeight + 12);
+
+                roundRectPath(ctx, x + 16, cursorY - 4, w - 32, blockH, 12);
+                ctx.fillStyle = accentBg;
+                ctx.fill();
+
+                // Bulatan nombor ayat berbingkai emas
+                const circleX = x + 40;
+                const circleY = cursorY + 16;
+                ctx.beginPath();
+                ctx.arc(circleX, circleY, 15, 0, Math.PI * 2);
+                ctx.fillStyle = headerColor;
+                ctx.fill();
+                ctx.lineWidth = 2;
+                ctx.strokeStyle = goldColor;
+                ctx.stroke();
+
+                ctx.fillStyle = "#ffffff";
+                ctx.font = "800 16px 'Nunito', sans-serif";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(String(idx + 1), circleX, circleY + 1);
+
+                // Teks ayat asal murid (100% ejaan & tanda baca dikekalkan)
+                ctx.fillStyle = "#0f172a";
+                ctx.font = `700 ${fontSize}px 'Nunito', sans-serif`;
+                ctx.textAlign = "left";
+                ctx.textBaseline = "top";
+
+                lines.forEach((lineText, lineIdx) => {
+                    ctx.fillText(lineText, x + 68, cursorY + 4 + lineIdx * lineHeight);
+                });
+
+                cursorY += blockH + 12;
+            });
+
+            ctx.restore();
+            return totalHeight;
+        }
+
+        // Lukis Ilustrasi Taman Sekolah Terperinci (Bangunan Sekolah Malaysia, Tasik, Jambatan Kayu & 4 Murid Bergotong-royong)
+        function drawSchoolCleanlinessScene(ctx, x, y, w, h, palette) {
+            ctx.save();
+            roundRectPath(ctx, x, y, w, h, 22);
+            ctx.clip();
+
+            // 1. Langit Cerah & Sinaran Matahari
+            const skyGrad = ctx.createLinearGradient(x, y, x, y + h * 0.65);
+            skyGrad.addColorStop(0, "#0284c7");
+            skyGrad.addColorStop(0.55, "#38bdf8");
+            skyGrad.addColorStop(1, "#e0f2fe");
+            ctx.fillStyle = skyGrad;
+            ctx.fillRect(x, y, w, h);
+
+            // Matahari Emas & Sinaran
+            const sunX = x + w - 82;
+            const sunY = y + 56;
+            ctx.fillStyle = "rgba(253, 224, 71, 0.25)";
+            ctx.beginPath();
+            ctx.arc(sunX, sunY, 48, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = "#fde047";
+            ctx.beginPath();
+            ctx.arc(sunX, sunY, 32, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = "#facc15";
+            ctx.lineWidth = 4;
+            ctx.stroke();
+
+            // Burung terbang di langit
+            ctx.strokeStyle = "#1e3a8a";
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(x + 280, y + 48);
+            ctx.quadraticCurveTo(x + 288, y + 40, x + 296, y + 48);
+            ctx.quadraticCurveTo(x + 304, y + 40, x + 312, y + 48);
+            ctx.moveTo(x + 325, y + 62);
+            ctx.quadraticCurveTo(x + 331, y + 56, x + 337, y + 62);
+            ctx.quadraticCurveTo(x + 343, y + 56, x + 349, y + 62);
+            ctx.stroke();
+
+            // Awan Lembut
+            drawCloud(ctx, x + 105, y + 50, 0.95);
+            drawCloud(ctx, x + 490, y + 44, 0.8);
+
+            // 2. Bangunan Sekolah Malaysia di Latar Belakang Kiri
+            const bx = x + 38;
+            const by = y + 76;
+            // Dinding Sekolah
+            ctx.fillStyle = "#fef9c3";
+            ctx.fillRect(bx, by + 32, 210, 88);
+            ctx.strokeStyle = "#ca8a04";
+            ctx.lineWidth = 2;
+            ctx.strokeRect(bx, by + 32, 210, 88);
+
+            // Bumbung Merah Bertingkat
+            ctx.fillStyle = "#dc2626";
+            ctx.beginPath();
+            ctx.moveTo(bx - 12, by + 32);
+            ctx.lineTo(bx + 105, by);
+            ctx.lineTo(bx + 222, by + 32);
+            ctx.closePath();
+            ctx.fill();
+            ctx.strokeStyle = "#991b1b";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Papan Tanda "SEKOLAH KEBANGSAAN"
+            ctx.fillStyle = "#1e3a8a";
+            roundRectPath(ctx, bx + 42, by + 38, 126, 20, 4);
+            ctx.fill();
+            ctx.fillStyle = "#facc15";
+            ctx.font = "800 10.5px 'Nunito', sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("SEKOLAH KITA", bx + 105, by + 48);
+
+            // Tingkap Sekolah
+            ctx.fillStyle = "#7dd3fc";
+            ctx.fillRect(bx + 18, by + 66, 32, 26);
+            ctx.fillRect(bx + 160, by + 66, 32, 26);
+            // Pintu Utama
+            ctx.fillStyle = "#92400e";
+            ctx.fillRect(bx + 90, by + 66, 30, 54);
+
+            // Tiang Bendera & Bendera Berkibar di sebelah sekolah
+            const flagPoleX = bx + 236;
+            ctx.fillStyle = "#e2e8f0";
+            ctx.fillRect(flagPoleX, by + 18, 4, 102);
+            ctx.fillStyle = "#facc15";
+            ctx.beginPath();
+            ctx.arc(flagPoleX + 2, by + 16, 4, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Bendera jalur merah putih & kotak biru
+            ctx.fillStyle = "#dc2626";
+            ctx.fillRect(flagPoleX + 4, by + 20, 44, 26);
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(flagPoleX + 4, by + 26, 44, 5);
+            ctx.fillRect(flagPoleX + 4, by + 36, 44, 5);
+            ctx.fillStyle = "#1e3a8a";
+            ctx.fillRect(flagPoleX + 4, by + 20, 20, 14);
+            ctx.fillStyle = "#facc15";
+            ctx.beginPath();
+            ctx.arc(flagPoleX + 14, by + 27, 4, 0, Math.PI * 2);
+            ctx.fill();
+
+            // 3. Bukit & Padang Rumput Taman Sekolah
+            ctx.fillStyle = "#4ade80";
+            ctx.beginPath();
+            ctx.moveTo(x, y + 190);
+            ctx.quadraticCurveTo(x + w * 0.42, y + 160, x + w, y + 185);
+            ctx.lineTo(x + w, y + h);
+            ctx.lineTo(x, y + h);
+            ctx.closePath();
+            ctx.fill();
+
+            ctx.fillStyle = "#22c55e";
+            ctx.beginPath();
+            ctx.moveTo(x, y + 216);
+            ctx.quadraticCurveTo(x + w * 0.52, y + 194, x + w, y + 218);
+            ctx.lineTo(x + w, y + h);
+            ctx.lineTo(x, y + h);
+            ctx.closePath();
+            ctx.fill();
+
+            // Laluan pejalan kaki batu taman
+            ctx.fillStyle = "#fef3c7";
+            ctx.beginPath();
+            ctx.moveTo(x + 120, y + h);
+            ctx.quadraticCurveTo(x + 250, y + 270, x + 460, y + 255);
+            ctx.lineTo(x + 495, y + 268);
+            ctx.quadraticCurveTo(x + 275, y + 292, x + 185, y + h);
+            ctx.closePath();
+            ctx.fill();
+
+            // 4. Tasik Biru Jernih Taman Sekolah di Kanan Tengah
+            const lakeX = x + w - 210;
+            const lakeY = y + 242;
+            ctx.fillStyle = "#0369a1";
+            ctx.beginPath();
+            ctx.ellipse(lakeX, lakeY, 178, 40, 0, 0, Math.PI * 2);
+            ctx.fill();
+
+            const lakeGrad = ctx.createLinearGradient(lakeX - 160, lakeY, lakeX + 160, lakeY);
+            lakeGrad.addColorStop(0, "#0284c7");
+            lakeGrad.addColorStop(0.5, "#38bdf8");
+            lakeGrad.addColorStop(1, "#0284c7");
+            ctx.fillStyle = lakeGrad;
+            ctx.beginPath();
+            ctx.ellipse(lakeX, lakeY + 2, 165, 30, 0, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Daun Teratai & Bunga Teratai di Tasik
+            ctx.fillStyle = "#16a34a";
+            ctx.beginPath();
+            ctx.ellipse(lakeX - 95, lakeY + 12, 14, 6, 0, 0, Math.PI * 2);
+            ctx.ellipse(lakeX + 102, lakeY + 8, 15, 6, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = "#f472b6";
+            ctx.beginPath();
+            ctx.arc(lakeX - 95, lakeY + 9, 5, 0, Math.PI * 2);
+            ctx.arc(lakeX + 102, lakeY + 5, 5, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Riak air tasik
+            ctx.strokeStyle = "#e0f2fe";
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(lakeX - 65, lakeY - 2);
+            ctx.quadraticCurveTo(lakeX - 40, lakeY - 7, lakeX - 15, lakeY - 2);
+            ctx.moveTo(lakeX + 20, lakeY + 8);
+            ctx.quadraticCurveTo(lakeX + 48, lakeY + 3, lakeX + 76, lakeY + 8);
+            ctx.stroke();
+
+            // 5. Jambatan Kayu Melengkung Terperinci Merentasi Tasik
+            const brX = lakeX - 90;
+            const brY = lakeY - 46;
+            // Tiang sokongan jambatan kayu
+            ctx.fillStyle = "#78350f";
+            ctx.fillRect(brX + 20, brY + 26, 7, 30);
+            ctx.fillRect(brX + 86, brY + 20, 7, 36);
+            ctx.fillRect(brX + 152, brY + 26, 7, 30);
+            // Pemegang tangan atas & tengah jambatan
+            ctx.strokeStyle = "#b45309";
+            ctx.lineWidth = 4.5;
+            ctx.beginPath();
+            ctx.moveTo(brX + 6, brY + 20);
+            ctx.quadraticCurveTo(brX + 90, brY - 4, brX + 174, brY + 20);
+            ctx.stroke();
+
+            ctx.strokeStyle = "#d97706";
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(brX + 10, brY + 30);
+            ctx.quadraticCurveTo(brX + 90, brY + 6, brX + 170, brY + 30);
+            ctx.stroke();
+
+            // Lantai papan jambatan kayu
+            ctx.strokeStyle = "#92400e";
+            ctx.lineWidth = 9;
+            ctx.beginPath();
+            ctx.moveTo(brX, brY + 40);
+            ctx.quadraticCurveTo(brX + 90, brY + 16, brX + 180, brY + 40);
+            ctx.stroke();
+
+            // 6. Pokok Hijau Rendang di Kiri & Kanan
+            drawTree(ctx, x + 28, y + 128, 1.0);
+            drawTree(ctx, x + w - 42, y + 122, 1.08);
+
+            // 7. Bangku Taman & 3 Tong Kitar Semula (Kertas, Kaca, Plastik)
+            // Bangku Taman Kayu di kiri tengah
+            const benchX = x + 132;
+            const benchY = y + 216;
+            ctx.fillStyle = "#78350f";
+            ctx.fillRect(benchX + 6, benchY + 16, 5, 16);
+            ctx.fillRect(benchX + 54, benchY + 16, 5, 16);
+            ctx.fillStyle = "#b45309";
+            roundRectPath(ctx, benchX, benchY, 65, 8, 3);
+            ctx.fill();
+            roundRectPath(ctx, benchX, benchY + 11, 65, 8, 3);
+            ctx.fill();
+
+            // 3 Tong Kitar Semula Rasmi
+            drawRecycleBin(ctx, x + 24, y + 266, "#2563eb", "KERTAS");
+            drawRecycleBin(ctx, x + 68, y + 266, "#92400e", "KACA");
+            drawRecycleBin(ctx, x + 112, y + 266, "#ea580c", "PLASTIK");
+
+            // 8. Empat Orang Murid Tahun 4 Bergotong-royong Membersihkan Taman Sekolah
+            // Murid 1: Menyapu daun kering
+            drawStudent(ctx, x + 225, y + 242, {
+                shirtColor: "#ffffff",
+                pantsColor: "#1e3a8a",
+                hairColor: "#1e293b",
+                skinColor: "#fed7aa",
+                action: "sweep"
+            });
+
+            // Murid 2: Mengutip sampah ke dalam beg plastik
+            drawStudent(ctx, x + 318, y + 252, {
+                shirtColor: "#ffffff",
+                pantsColor: "#1e3a8a",
+                hairColor: "#0f172a",
+                skinColor: "#fdba74",
+                hijabColor: "#fef08a",
+                action: "pick"
+            });
+
+            // Murid 3: Menyiram pokok bunga
+            drawStudent(ctx, x + 422, y + 246, {
+                shirtColor: "#ffffff",
+                pantsColor: "#1e3a8a",
+                hairColor: "#1e293b",
+                skinColor: "#fed7aa",
+                action: "water"
+            });
+
+            // Murid 4: Mengelap bangku taman
+            drawStudent(ctx, x + 178, y + 205, {
+                shirtColor: "#ffffff",
+                pantsColor: "#1e3a8a",
+                hairColor: "#1e293b",
+                skinColor: "#fdba74",
+                hijabColor: "#ffffff",
+                action: "wipe"
+            });
+
+            // Bunga-bunga Taman Warna-warni di Hadapan
+            const flowerColors = ["#f43f5e", "#facc15", "#a855f7", "#fb923c", "#ec4899"];
+            for (let i = 0; i < 9; i++) {
+                const fx = x + 175 + i * 68;
+                const fy = y + 324 + (i % 2) * 8;
+                ctx.fillStyle = "#15803d";
+                ctx.fillRect(fx - 1.5, fy, 3, 14);
+                ctx.fillStyle = flowerColors[i % flowerColors.length];
+                ctx.beginPath();
+                ctx.arc(fx, fy, 6.5, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.fillStyle = "#fef08a";
+                ctx.beginPath();
+                ctx.arc(fx, fy, 2.5, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            ctx.restore();
+
+            // Bingkai luar kotak ilustrasi beraksen emas
+            ctx.save();
+            roundRectPath(ctx, x, y, w, h, 22);
+            ctx.lineWidth = 4.5;
+            ctx.strokeStyle = palette.goldAccent;
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        function drawCloud(ctx, cx, cy, scale) {
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.scale(scale, scale);
+            ctx.fillStyle = "rgba(255, 255, 255, 0.92)";
+            ctx.beginPath();
+            ctx.arc(-20, 4, 16, 0, Math.PI * 2);
+            ctx.arc(0, -4, 22, 0, Math.PI * 2);
+            ctx.arc(22, 4, 16, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function drawTree(ctx, tx, ty, scale) {
+            ctx.save();
+            ctx.translate(tx, ty);
+            ctx.scale(scale, scale);
+            ctx.fillStyle = "#78350f";
+            ctx.fillRect(-6, 22, 12, 38);
+            ctx.fillStyle = "#15803d";
+            ctx.beginPath();
+            ctx.arc(0, 8, 28, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = "#22c55e";
+            ctx.beginPath();
+            ctx.arc(-14, 14, 18, 0, Math.PI * 2);
+            ctx.arc(14, 14, 18, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function drawRecycleBin(ctx, bx, by, color, label) {
+            ctx.save();
+            roundRectPath(ctx, bx, by, 38, 48, 6);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.strokeStyle = "#ffffff";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Penutup tong
+            roundRectPath(ctx, bx - 3, by - 6, 44, 8, 4);
+            ctx.fillStyle = "#1e293b";
+            ctx.fill();
+
+            // Simbol kitar semula ringkas
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "800 8px 'Nunito', sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText("♻", bx + 19, by + 22);
+            ctx.fillText(label, bx + 19, by + 35);
+            ctx.restore();
+        }
+
+        function drawStudent(ctx, sx, sy, cfg) {
+            ctx.save();
+            ctx.translate(sx, sy);
+
+            // Kaki & Kasut Sekolah Putih
+            ctx.fillStyle = cfg.pantsColor;
+            ctx.fillRect(-10, 26, 8, 22);
+            ctx.fillRect(2, 26, 8, 22);
+
+            ctx.fillStyle = "#ffffff";
+            roundRectPath(ctx, -12, 45, 11, 7, 3);
+            ctx.fill();
+            roundRectPath(ctx, 1, 45, 11, 7, 3);
+            ctx.fill();
+
+            // Badan (Baju Seragam Sekolah)
+            roundRectPath(ctx, -14, 2, 28, 26, 8);
+            ctx.fillStyle = cfg.shirtColor;
+            ctx.fill();
+            ctx.strokeStyle = "#cbd5e1";
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            // Tudung jika ada
+            if (cfg.hijabColor) {
+                ctx.fillStyle = cfg.hijabColor;
+                ctx.beginPath();
+                ctx.arc(0, -10, 17, 0, Math.PI * 2);
+                ctx.fill();
+                roundRectPath(ctx, -15, -4, 30, 18, 8);
+                ctx.fill();
+            }
+
+            // Kepala & Muka Ceria
+            ctx.fillStyle = cfg.skinColor;
+            ctx.beginPath();
+            ctx.arc(0, -11, 13, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Rambut (jika tidak bertudung)
+            if (!cfg.hijabColor) {
+                ctx.fillStyle = cfg.hairColor;
+                ctx.beginPath();
+                ctx.arc(0, -14, 13.5, Math.PI, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Mata & Senyuman
+            ctx.fillStyle = "#0f172a";
+            ctx.beginPath();
+            ctx.arc(-4.5, -11, 1.8, 0, Math.PI * 2);
+            ctx.arc(4.5, -11, 1.8, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.strokeStyle = "#be123c";
+            ctx.lineWidth = 1.8;
+            ctx.beginPath();
+            ctx.arc(0, -8, 4.5, 0.15 * Math.PI, 0.85 * Math.PI);
+            ctx.stroke();
+
+            // Alat Kebersihan Mengikut Aksi
+            if (cfg.action === "sweep") {
+                // Penyapu Lidi
+                ctx.strokeStyle = "#92400e";
+                ctx.lineWidth = 3.5;
+                ctx.beginPath();
+                ctx.moveTo(-8, 8);
+                ctx.lineTo(24, 46);
+                ctx.stroke();
+
+                ctx.fillStyle = "#f59e0b";
+                ctx.beginPath();
+                ctx.moveTo(18, 40);
+                ctx.lineTo(32, 42);
+                ctx.lineTo(36, 54);
+                ctx.lineTo(14, 52);
+                ctx.closePath();
+                ctx.fill();
+            } else if (cfg.action === "pick") {
+                // Beg Plastik Sampah Hijau
+                ctx.fillStyle = "#16a34a";
+                ctx.beginPath();
+                ctx.ellipse(20, 34, 11, 14, 0.2, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = "#14532d";
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+            } else if (cfg.action === "water") {
+                // Penyiram Pokok Kuning
+                roundRectPath(ctx, 14, 14, 18, 14, 4);
+                ctx.fillStyle = "#eab308";
+                ctx.fill();
+                ctx.strokeStyle = "#eab308";
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(32, 20);
+                ctx.lineTo(42, 14);
+                ctx.stroke();
+                // Titisan air
+                ctx.fillStyle = "#38bdf8";
+                ctx.beginPath();
+                ctx.arc(45, 20, 2, 0, Math.PI * 2);
+                ctx.arc(48, 26, 2, 0, Math.PI * 2);
+                ctx.fill();
+            } else if (cfg.action === "wipe") {
+                // Kain pengelap biru muda
+                roundRectPath(ctx, -22, 12, 13, 9, 3);
+                ctx.fillStyle = "#38bdf8";
+                ctx.fill();
+                ctx.strokeStyle = "#ffffff";
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+
+            ctx.restore();
+        }
+
+        // =========================================================================
+        // 5. MUAT TURUN IMEJ PNG LENGKAP (900 x 1200 PX) - SERASI GOOGLE SITES
+        // =========================================================================
+        function downloadPosterPNG() {
+            try {
+                const canvas = document.getElementById("posterCanvas");
+                // Pastikan poster dilukis dengan keadaan terkini sebelum dimuat turun
+                renderPoster(currentPosterState);
+
+                const safeTitle = (currentPosterState.title || "misi-poster-sekolah")
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, "-")
+                    .replace(/^-+|-+$/g, "");
+                const fileName = `poster-${safeTitle || "sekolah"}.png`;
+
+                // Gunakan Blob URL supaya lebih stabil dalam iframe Google Sites
+                if (canvas.toBlob) {
+                    canvas.toBlob((blob) => {
+                        if (!blob) return;
+                        const blobUrl = URL.createObjectURL(blob);
+                        const link = document.createElement("a");
+                        link.download = fileName;
+                        link.href = blobUrl;
+                        link.target = "_blank";
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        setTimeout(() => URL.revokeObjectURL(blobUrl), 5000);
+                    }, "image/png");
+                } else {
+                    const link = document.createElement("a");
+                    link.download = fileName;
+                    link.href = canvas.toDataURL("image/png");
+                    link.target = "_blank";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+
+                showFeedback("success", "Poster Sebenar Dimuat Turun!", "Fail imej PNG poster (900 × 1200 px) telah dijana. Jika muat turun disekat oleh Google Sites, klik butang 'Besarkan' dan klik kanan > Simpan Imej.");
+            } catch (err) {
+                openFullscreenPreview();
+                showFeedback("error", "Simpan Imej daripada Pratonton", "Pelayar/Google Sites menyekat muat turun terus. Sila klik kanan pada poster besar dan pilih 'Save image as...'.");
+            }
+        }
+
+        // =========================================================================
+        // 6. INISIALISASI SEMASA HALAMAN DIBUKA
+        // =========================================================================
+        window.addEventListener("DOMContentLoaded", () => {
+            // Isi contoh awal supaya murid terus melihat pratonton poster & borang yang lengkap
+            document.getElementById("inputTitle").value = EXAMPLE_DATA.title;
+            document.getElementById("inputSimple1").value = EXAMPLE_DATA.simple1;
+            document.getElementById("inputSimple2").value = EXAMPLE_DATA.simple2;
+            document.getElementById("inputCompound1").value = EXAMPLE_DATA.compound1;
+            document.getElementById("inputCompound2").value = EXAMPLE_DATA.compound2;
+            document.getElementById("promptTextarea").value = formatPromptString(EXAMPLE_DATA);
+            selectTheme(EXAMPLE_DATA.theme);
+
+            // Tunggu sebentar untuk fon dimuatkan sebelum melukis Canvas
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => {
+                    renderPoster(currentPosterState);
+                });
+            } else {
+                renderPoster(currentPosterState);
+            }
+        });
+    </script>
+</body>
+</html>
